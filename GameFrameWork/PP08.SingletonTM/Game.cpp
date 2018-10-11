@@ -39,8 +39,6 @@ void Game::render()
 		m_currentFrame, m_pRenderer);
 
 	SDL_RenderPresent(m_pRenderer);
-
-	SDL_RenderPresent(m_pRenderer);
 }
 
 void Game::update()
