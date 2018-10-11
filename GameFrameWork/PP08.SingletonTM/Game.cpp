@@ -32,7 +32,6 @@ void Game::render()
 {
 	SDL_RenderClear(m_pRenderer);
 
-	SDL_RenderClear(m_pRenderer);
 	TheTextureManager::Instance()->draw("animate", 0, 0, 128, 82, m_pRenderer);
 
 	TheTextureManager::Instance()->drawFrame("animate", 100, 100, 128, 82, 1,
