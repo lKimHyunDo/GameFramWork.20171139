@@ -150,40 +150,7 @@ void Game::Render()
 	
 	D3Render::GetInst()->RenderD3Object(m_pRenderer,*cam, object);
 
-	/*float x = 50.0f;
-	float y = 50.0f;
-	float z = 50.0f;
-	Vec3 vertex[8] =
-{   { 0 + 0.f,0,0.f + screenSizeW/4 },
-	{ x + 0.f,0,0.f + screenSizeW/4 },
-	{ 0 + 0.f,y,0.f + screenSizeW/4 },
-	{ 0 + 0.f,0,z + screenSizeW/4 },
-	{ x + 0.f,y,0.f + screenSizeW/4 },
-	{ 0 + 0.f,y,z + screenSizeW/4 },
-	{ x + 0.f,0,z + screenSizeW/4 },
-	{ x + 0.f,y,z + screenSizeW/4 } };
-
-	Vec2 p[8];
-
-	for (int i = 0; i < 8; i++)
-	{
-		p[i] = D3Render::GetInst()->CameraToViewer(*cam,
-			D3Render::GetInst()->WorldToCamera(*cam, vertex[i]));
-	}
-	SDL_SetRenderDrawColor(m_pRenderer, 0, 0, 0, 255);
-	SDL_RenderDrawLine(m_pRenderer, p[0].x, p[0].y, p[1].x, p[1].y);
-	SDL_RenderDrawLine(m_pRenderer, p[0].x, p[0].y, p[2].x, p[2].y);
-	SDL_RenderDrawLine(m_pRenderer, p[0].x, p[0].y, p[3].x, p[3].y);
-	SDL_RenderDrawLine(m_pRenderer, p[1].x, p[1].y, p[4].x, p[4].y);
-	SDL_RenderDrawLine(m_pRenderer, p[1].x, p[1].y, p[6].x, p[6].y);
-	SDL_RenderDrawLine(m_pRenderer, p[2].x, p[2].y, p[4].x, p[4].y);
-	SDL_RenderDrawLine(m_pRenderer, p[2].x, p[2].y, p[5].x, p[5].y);
-	SDL_RenderDrawLine(m_pRenderer, p[3].x, p[3].y, p[5].x, p[5].y);
-	SDL_RenderDrawLine(m_pRenderer, p[3].x, p[3].y, p[6].x, p[6].y);
-	SDL_RenderDrawLine(m_pRenderer, p[4].x, p[4].y, p[7].x, p[7].y);
-	SDL_RenderDrawLine(m_pRenderer, p[5].x, p[5].y, p[7].x, p[7].y);
-	SDL_RenderDrawLine(m_pRenderer, p[6].x, p[6].y, p[7].x, p[7].y);*/
-
+	
 	SDL_RenderPresent(m_pRenderer);
 }
 
