@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <map>
@@ -9,11 +8,23 @@ using namespace std;
 class TextureManager
 {
 private:
+	static TextureManager* s_pInstance;
+
 	map<string, SDL_Texture*> m_textureMap;
 
-public:
 	TextureManager() {}
+public:
 	~TextureManager() {}
+
+	static TextureManager* Instance()
+	{
+		if (s_pInstance == 0)
+		{
+			s_pInstance = new TextureManager();
+			return s_pInstance;
+		}
+		return s_pInstance;
+	}
 
 	bool load(string fileName, string id,
 		SDL_Renderer* pRenderer);
