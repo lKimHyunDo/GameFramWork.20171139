@@ -21,6 +21,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP07.TextureManger", "PP07.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP08.SingletonTM", "PP08.SingletonTM\PP08.SingletonTM.vcxproj", "{0E3FDFAB-DA20-4B4B-B3AA-8C1BEC67806F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP09.Inheritance", "PP09.Inheritance\PP09.Inheritance.vcxproj", "{6A0B1A99-E994-4EF8-970B-0FB329842D5A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP10.Polymorphism", "PP10.Polymorphism\PP10.Polymorphism.vcxproj", "{1D24AE0D-48CF-4657-AA99-5CCB0EA50832}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +105,22 @@ Global
 		{0E3FDFAB-DA20-4B4B-B3AA-8C1BEC67806F}.Release|x64.Build.0 = Release|x64
 		{0E3FDFAB-DA20-4B4B-B3AA-8C1BEC67806F}.Release|x86.ActiveCfg = Release|Win32
 		{0E3FDFAB-DA20-4B4B-B3AA-8C1BEC67806F}.Release|x86.Build.0 = Release|Win32
+		{6A0B1A99-E994-4EF8-970B-0FB329842D5A}.Debug|x64.ActiveCfg = Debug|x64
+		{6A0B1A99-E994-4EF8-970B-0FB329842D5A}.Debug|x64.Build.0 = Debug|x64
+		{6A0B1A99-E994-4EF8-970B-0FB329842D5A}.Debug|x86.ActiveCfg = Debug|Win32
+		{6A0B1A99-E994-4EF8-970B-0FB329842D5A}.Debug|x86.Build.0 = Debug|Win32
+		{6A0B1A99-E994-4EF8-970B-0FB329842D5A}.Release|x64.ActiveCfg = Release|x64
+		{6A0B1A99-E994-4EF8-970B-0FB329842D5A}.Release|x64.Build.0 = Release|x64
+		{6A0B1A99-E994-4EF8-970B-0FB329842D5A}.Release|x86.ActiveCfg = Release|Win32
+		{6A0B1A99-E994-4EF8-970B-0FB329842D5A}.Release|x86.Build.0 = Release|Win32
+		{1D24AE0D-48CF-4657-AA99-5CCB0EA50832}.Debug|x64.ActiveCfg = Debug|x64
+		{1D24AE0D-48CF-4657-AA99-5CCB0EA50832}.Debug|x64.Build.0 = Debug|x64
+		{1D24AE0D-48CF-4657-AA99-5CCB0EA50832}.Debug|x86.ActiveCfg = Debug|Win32
+		{1D24AE0D-48CF-4657-AA99-5CCB0EA50832}.Debug|x86.Build.0 = Debug|Win32
+		{1D24AE0D-48CF-4657-AA99-5CCB0EA50832}.Release|x64.ActiveCfg = Release|x64
+		{1D24AE0D-48CF-4657-AA99-5CCB0EA50832}.Release|x64.Build.0 = Release|x64
+		{1D24AE0D-48CF-4657-AA99-5CCB0EA50832}.Release|x86.ActiveCfg = Release|Win32
+		{1D24AE0D-48CF-4657-AA99-5CCB0EA50832}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
