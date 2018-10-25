@@ -13,4 +13,3 @@ public:
 		m_moveSpeed = speed;
 	}
 };
-
