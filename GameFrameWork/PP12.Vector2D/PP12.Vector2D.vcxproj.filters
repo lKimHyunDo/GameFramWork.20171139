@@ -34,6 +34,9 @@
     <Filter Include="Vector2D">
       <UniqueIdentifier>{7e6bd291-a382-4cd1-96c9-5221a743f454}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{43fb0d8d-3a94-4dd6-950c-078b8d3bfa8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TextureManager.cpp">
@@ -76,6 +79,9 @@
     </ClInclude>
     <ClInclude Include="Vector2D.h">
       <Filter>Vector2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
