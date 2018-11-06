@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Enemy">
+      <UniqueIdentifier>{d739d0a5-6a46-4427-9086-91f469a4a404}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{d1f0051f-aaae-4948-9ba7-f539c5c1f2c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{d2d7e0f5-a069-4300-9f32-e23dddae865a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputHandler">
+      <UniqueIdentifier>{864d422c-ee6d-4c23-b99e-4c6062b88d5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoaderParams">
+      <UniqueIdentifier>{582a1f4a-474f-4874-8a26-e4ea4ec882ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{dd03169d-b459-4858-a0de-989c02c1549a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDLGameObject">
+      <UniqueIdentifier>{3750e537-b87f-49cb-9407-7f2664b939f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TextureManager">
+      <UniqueIdentifier>{56899d6b-f297-49a8-bf46-a2dce08926d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vector2D">
+      <UniqueIdentifier>{ada84781-214b-4dd5-9e90-3b43a69d6209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CollisionManager">
+      <UniqueIdentifier>{56d28b11-8a30-4ace-91c2-36f49046a2ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ball">
+      <UniqueIdentifier>{cc216dd8-3593-4109-adf3-5bd9177cd6be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Enemy.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHandler.h">
+      <Filter>InputHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="LoaderParams.h">
+      <Filter>LoaderParams</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLGameObject.h">
+      <Filter>SDLGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>Vector2D</Filter>
+    </ClInclude>
+    <ClInclude Include="CollsionManager.h">
+      <Filter>CollisionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball.h">
+      <Filter>Ball</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="InputHandler.cpp">
+      <Filter>InputHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLGameObject.cpp">
+      <Filter>SDLGameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CollsionManager.cpp">
+      <Filter>CollisionManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball.cpp">
+      <Filter>Ball</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

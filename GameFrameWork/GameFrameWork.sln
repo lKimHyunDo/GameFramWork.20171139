@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP13.KInputHandler", "PP13.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP14.MInputHandler", "PP14.MInputHandler\PP14.MInputHandler.vcxproj", "{97E7E35F-AEC3-4903-94ED-70037EE71D7A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HH07", "HH07\HH07.vcxproj", "{10D2DBA4-D344-4101-97F4-46451D0FAB58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +173,14 @@ Global
 		{97E7E35F-AEC3-4903-94ED-70037EE71D7A}.Release|x64.Build.0 = Release|x64
 		{97E7E35F-AEC3-4903-94ED-70037EE71D7A}.Release|x86.ActiveCfg = Release|Win32
 		{97E7E35F-AEC3-4903-94ED-70037EE71D7A}.Release|x86.Build.0 = Release|Win32
+		{10D2DBA4-D344-4101-97F4-46451D0FAB58}.Debug|x64.ActiveCfg = Debug|x64
+		{10D2DBA4-D344-4101-97F4-46451D0FAB58}.Debug|x64.Build.0 = Debug|x64
+		{10D2DBA4-D344-4101-97F4-46451D0FAB58}.Debug|x86.ActiveCfg = Debug|Win32
+		{10D2DBA4-D344-4101-97F4-46451D0FAB58}.Debug|x86.Build.0 = Debug|Win32
+		{10D2DBA4-D344-4101-97F4-46451D0FAB58}.Release|x64.ActiveCfg = Release|x64
+		{10D2DBA4-D344-4101-97F4-46451D0FAB58}.Release|x64.Build.0 = Release|x64
+		{10D2DBA4-D344-4101-97F4-46451D0FAB58}.Release|x86.ActiveCfg = Release|Win32
+		{10D2DBA4-D344-4101-97F4-46451D0FAB58}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
