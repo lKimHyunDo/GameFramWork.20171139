@@ -1,6 +1,6 @@
 #include "InputHandler.h"
 #include "Game.h"
-
+#include "Vector2D.h"
 InputHandler* InputHandler::s_pInstance = 0;
 
 InputHandler::InputHandler()

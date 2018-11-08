@@ -46,6 +46,9 @@
     <Filter Include="Ball">
       <UniqueIdentifier>{cc216dd8-3593-4109-adf3-5bd9177cd6be}</UniqueIdentifier>
     </Filter>
+    <Filter Include="brick">
+      <UniqueIdentifier>{954db6f4-93f9-4007-9c41-5e9de741a0c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Enemy.h">
@@ -81,6 +84,9 @@
     <ClInclude Include="Ball.h">
       <Filter>Ball</Filter>
     </ClInclude>
+    <ClInclude Include="brick.h">
+      <Filter>brick</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Enemy.cpp">
@@ -112,6 +118,9 @@
     </ClCompile>
     <ClCompile Include="Ball.cpp">
       <Filter>Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="brick.cpp">
+      <Filter>brick</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

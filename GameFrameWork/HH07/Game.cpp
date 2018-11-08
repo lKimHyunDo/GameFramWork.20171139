@@ -2,6 +2,9 @@
 #include "Game.h"
 #include "InputHandler.h"
 #include "CollsionManager.h"
+#include "Player.h"
+#include "Enemy.h"
+#include "brick.h"
 Game* Game::s_pInstance = 0;
 bool Game::init(const char * title, int xpos, int ypos, int width, int height, bool fullscreen)
 {
@@ -23,12 +26,13 @@ bool Game::init(const char * title, int xpos, int ypos, int width, int height, b
 	}
 
 	SDL_SetRenderDrawColor(m_pRenderer, 255, 0, 0, 255);
-
+	
 	TheTextureManager::Instance()->load("assets/animate-alpha.png", "animate", m_pRenderer);
-
-	m_gameObjects.push_back(new Player(new LoaderParams(100, 100, 128, 82, "animate")));
-	m_gameObjects.push_back(new Enemy(new LoaderParams(300, 300, 128, 82, "animate")));
-
+	TheTextureManager::Instance()->load("assets/ball.png", "ball", m_pRenderer);
+	TheTextureManager::Instance()->load("assets/brick.png", "brick", m_pRenderer);
+	TheTextureManager::Instance()->load("assets/broken_brick.png", "broken_brick", m_pRenderer);
+	m_gameObjects.push_back(new Player(new LoaderParams(100, 100, 128, 82,"player","animate")));
+	m_gameObjects.push_back(new Brick(new LoaderParams(500, 100, 82, 82,"brick", "brick")));
 	//m_go = new GameObject();
 	//m_player = new Player();
 	//m_enemy = new Enemy();

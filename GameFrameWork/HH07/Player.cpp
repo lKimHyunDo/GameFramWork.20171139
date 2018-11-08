@@ -23,6 +23,7 @@ void Player::handleInput()
 	}
 	if (TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_SPACE))
 	{
+		Game::Instance()->GetGameObjects()->push_back(new Ball(new LoaderParams(m_position.getX()+82, m_position.getY()+30, 32, 32,"ball", "ball")));
 	}
 }
 
