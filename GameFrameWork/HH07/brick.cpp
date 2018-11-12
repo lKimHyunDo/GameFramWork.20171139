@@ -7,7 +7,7 @@ void Brick::handleInput()
 
 Brick::Brick(const LoaderParams* pParams) : SDLGameObject(pParams)
 {
-}
+}//
 
 void Brick::draw()
 {

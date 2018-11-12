@@ -53,14 +53,25 @@ void InputHandler::onMouseButtonUp(SDL_Event & event)
 
 }
 
-void InputHandler::onKeyUp()
+void InputHandler::onKeyUp(SDL_Event& event)
 {
-	m_keystates = SDL_GetKeyboardState(0);
+	if (m_isKeyHolding[event.key.keysym.scancode] == true) {
+		m_isKeyUp[event.key.keysym.scancode] = true;
+		m_keyUpCheck = event.key.keysym.scancode;
+	}
+	m_isKeyHolding[event.key.keysym.scancode] = false;
+	//m_keystates = SDL_GetKeyboardState(0);
 }
 
-void InputHandler::onKeyDown()
+void InputHandler::onKeyDown(SDL_Event& event)
 {
-	m_keystates = SDL_GetKeyboardState(0);
+	if (m_isKeyHolding[event.key.keysym.scancode] == false) {
+		m_isKeyDown[event.key.keysym.scancode] = true;
+		m_keyDownCheck = event.key.keysym.scancode;
+	}
+
+	m_isKeyHolding[event.key.keysym.scancode] = true;
+	//m_keystates = SDL_GetKeyboardState(0);
 }
 
 void InputHandler::clean()
@@ -71,6 +82,10 @@ void InputHandler::clean()
 void InputHandler::update()
 {
 	SDL_Event event;
+
+	m_isKeyDown[m_keyDownCheck] = false;
+	m_isKeyUp[m_keyUpCheck] = false;
+
 	while (SDL_PollEvent(&event))
 	{
 		switch (event.type)
@@ -88,10 +103,10 @@ void InputHandler::update()
 			onMouseButtonUp(event);
 			break;
 		case SDL_KEYDOWN:
-			onKeyDown();
+			onKeyDown(event);
 			break;
 		case SDL_KEYUP:
-			onKeyUp();
+			onKeyUp(event);
 			break;
 		default:
 			break;
@@ -101,20 +116,30 @@ void InputHandler::update()
 
 }
 
-bool InputHandler::isKeyDown(SDL_Scancode key)
+bool InputHandler::isKeyUp(SDL_Scancode key)
 {
-	if (m_keystates != 0) {
-		if (m_keystates[key] == 1)
-		{
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
-	return false;
+	return m_isKeyUp[key];
 }
 
+bool InputHandler::isKeyDown(SDL_Scancode key)
+{
+	//if (m_keystates != 0) {
+	//	if (m_keystates[key] == 1)
+	//	{
+	//		return true;
+	//	}
+	//	else {
+	//		return false;
+	//	}
+	//}
+	//return false;
+	return 	m_isKeyDown[key];
+}
+
+bool InputHandler::isKeyHolding(SDL_Scancode key)
+{
+	return m_isKeyHolding[key];
+}
 
 bool InputHandler::getMouseButtonState(int buttonNumber)
 {
