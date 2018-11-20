@@ -37,6 +37,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP14.MInputHandler", "PP14.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HH07", "HH07\HH07.vcxproj", "{10D2DBA4-D344-4101-97F4-46451D0FAB58}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP15.FSM", "PP15.FSM\PP15.FSM.vcxproj", "{D1E642C7-8FDE-4AED-B5A1-C78AC041A85A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -181,6 +183,14 @@ Global
 		{10D2DBA4-D344-4101-97F4-46451D0FAB58}.Release|x64.Build.0 = Release|x64
 		{10D2DBA4-D344-4101-97F4-46451D0FAB58}.Release|x86.ActiveCfg = Release|Win32
 		{10D2DBA4-D344-4101-97F4-46451D0FAB58}.Release|x86.Build.0 = Release|Win32
+		{D1E642C7-8FDE-4AED-B5A1-C78AC041A85A}.Debug|x64.ActiveCfg = Debug|x64
+		{D1E642C7-8FDE-4AED-B5A1-C78AC041A85A}.Debug|x64.Build.0 = Debug|x64
+		{D1E642C7-8FDE-4AED-B5A1-C78AC041A85A}.Debug|x86.ActiveCfg = Debug|Win32
+		{D1E642C7-8FDE-4AED-B5A1-C78AC041A85A}.Debug|x86.Build.0 = Debug|Win32
+		{D1E642C7-8FDE-4AED-B5A1-C78AC041A85A}.Release|x64.ActiveCfg = Release|x64
+		{D1E642C7-8FDE-4AED-B5A1-C78AC041A85A}.Release|x64.Build.0 = Release|x64
+		{D1E642C7-8FDE-4AED-B5A1-C78AC041A85A}.Release|x86.ActiveCfg = Release|Win32
+		{D1E642C7-8FDE-4AED-B5A1-C78AC041A85A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

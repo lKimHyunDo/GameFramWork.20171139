@@ -69,6 +69,7 @@ void Game::update()
 	{
 		m_gameObjects[i]->update();
 	}
+
 	//충돌체크
 	for (int i = 0; i < m_gameObjects.size() - 1; i++)
 	{

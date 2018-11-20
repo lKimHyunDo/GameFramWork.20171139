@@ -28,7 +28,7 @@ void Ball::collision(GameObject * pCollider)
 				Game::Instance()->GetGameObjects()->erase(iter);
 				break;
 			}
-		}		
+		}
 	}
 }
 
