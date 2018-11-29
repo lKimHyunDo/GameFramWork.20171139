@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Enemy">
+      <UniqueIdentifier>{89368896-bff8-4a2d-9680-90b578c19889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{e2f7360c-9702-40ae-bc79-cebb10d6011c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{f3cf52d1-5af4-4ab4-aeda-9521661a6efb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputHandler">
+      <UniqueIdentifier>{13ffdca2-7290-4b6a-a6f1-f35faca9ea39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoaderParams">
+      <UniqueIdentifier>{46e89257-7fc7-4bba-8465-d3ac849632eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MenuButton">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{7d16aef8-69e5-4edb-9c34-c435626b0914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDLGameObject">
+      <UniqueIdentifier>{28ea97b8-0b0d-4d76-a080-fbd7f15cc1c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State">
+      <UniqueIdentifier>{05a78eb9-f87b-45ce-863b-54aaffc01ad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TextureManager">
+      <UniqueIdentifier>{437ed501-6c12-490e-b34b-ef4339edd099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vector2D">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="State\GameState">
+      <UniqueIdentifier>{f5a7735b-85e2-418d-b8c2-9c58a38761b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\GameStateMachine">
+      <UniqueIdentifier>{80181039-a08a-4d32-af1e-cd65c695660b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\MenuState">
+      <UniqueIdentifier>{bbb1e473-9468-4759-89d6-d9c6fd15fc01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\PauseState">
+      <UniqueIdentifier>{915cc14d-892a-48cc-8fa1-b0eea9045e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{c8a735c4-2453-416d-9611-15027c65007d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\PlayState">
+      <UniqueIdentifier>{d231dae1-b256-452c-a992-b37620b684b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AnimatedGraphic">
+      <UniqueIdentifier>{9d67219e-4166-4566-809e-39693c2683f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\GameOverState">
+      <UniqueIdentifier>{8c4a9192-519b-497c-8c9d-23d437abf7ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateMachine.cpp">
+      <Filter>State\GameStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="InputHandler.cpp">
+      <Filter>InputHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuButton.cpp">
+      <Filter>MenuButton</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuState.cpp">
+      <Filter>State\MenuState</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseState.cpp">
+      <Filter>State\PauseState</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayState.cpp">
+      <Filter>State\PlayState</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLGameObject.cpp">
+      <Filter>SDLGameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatedGraphic.cpp">
+      <Filter>AnimatedGraphic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverState.cpp">
+      <Filter>State\GameOverState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>State\GameState</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Enemy.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>State\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateMachine.h">
+      <Filter>State\GameStateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHandler.h">
+      <Filter>InputHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="LoaderParams.h">
+      <Filter>LoaderParams</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuButton.h">
+      <Filter>MenuButton</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuState.h">
+      <Filter>State\MenuState</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseState.h">
+      <Filter>State\PauseState</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayState.h">
+      <Filter>State\PlayState</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLGameObject.h">
+      <Filter>SDLGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>Vector2D</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatedGraphic.h">
+      <Filter>AnimatedGraphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverState.h">
+      <Filter>State\GameOverState</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
