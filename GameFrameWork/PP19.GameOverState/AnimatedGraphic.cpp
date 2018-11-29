@@ -2,6 +2,7 @@
 
 AnimatedGraphic::AnimatedGraphic(const LoaderParams* pParams, int animSpeed) : SDLGameObject(pParams), m_animSpeed(animSpeed)
 {
+	m_numFrames = 2;
 }
 
 void AnimatedGraphic::update()

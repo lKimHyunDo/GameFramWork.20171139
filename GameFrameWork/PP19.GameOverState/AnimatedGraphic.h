@@ -6,9 +6,10 @@ class LoaderParams;
 
 class AnimatedGraphic : public SDLGameObject
 {
-protected:
+private:
 	int m_animSpeed;
 	int m_numFrames;
+
 public:
 	AnimatedGraphic(const LoaderParams* pParams, int animSpeed);
 	
