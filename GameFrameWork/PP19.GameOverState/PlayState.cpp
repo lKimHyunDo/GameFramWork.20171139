@@ -13,18 +13,18 @@ const std::string PlayState::s_playID = "PLAY";
 
 void PlayState::update()
 {
-	if (TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_ESCAPE))
-	{
-		TheGame::Instance()->getStateMachine()->changeState(
-			PauseState::Instance());
-	}
-	GameState::update();;
+	GameState::update();
 	if (checkCollision(
 		dynamic_cast<SDLGameObject*>(m_gameObjects[0]),
 		dynamic_cast<SDLGameObject*>(m_gameObjects[1])))
 	{
 		TheGame::Instance()->getStateMachine()->changeState(
 			GameOverState::Instance());
+	}
+	if (TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_ESCAPE))
+	{
+		TheGame::Instance()->getStateMachine()->changeState(
+			PauseState::Instance());
 	}
 }
 
