@@ -125,3 +125,11 @@ Vector2D * InputHandler::getMousePosition()
 {
 	return m_mousePosition;
 }
+
+void InputHandler::reset()
+{
+	for (auto state : m_mouseButtonStates)
+	{
+		state = false;
+	}
+}

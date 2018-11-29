@@ -58,6 +58,9 @@
     <Filter Include="MenuButton">
       <UniqueIdentifier>{8247436a-fb32-4a7c-94bf-586bfdadf2ba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="State\PauseState">
+      <UniqueIdentifier>{d8608374-ea9a-4e9a-9f9b-2ffc4b299948}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector2D.h">
@@ -102,6 +105,9 @@
     <ClInclude Include="MenuButton.h">
       <Filter>MenuButton</Filter>
     </ClInclude>
+    <ClInclude Include="PauseState.h">
+      <Filter>State\PauseState</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TextureManager.cpp">
@@ -139,6 +145,9 @@
     </ClCompile>
     <ClCompile Include="MenuButton.cpp">
       <Filter>MenuButton</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseState.cpp">
+      <Filter>State\PauseState</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

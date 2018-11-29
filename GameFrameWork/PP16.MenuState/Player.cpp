@@ -7,6 +7,7 @@ void Player::handleInput()
 	m_velocity = *target - m_position;
 	m_velocity /= 50;
 }
+
 Player::Player(const LoaderParams* pParams) : SDLGameObject(pParams)
 {
 }
