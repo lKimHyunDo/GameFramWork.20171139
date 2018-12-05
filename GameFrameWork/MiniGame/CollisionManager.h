@@ -2,6 +2,8 @@
 
 #include <vector>
 
+using namespace std;
+
 class Collider;
 
 class CollisionManager
@@ -21,7 +23,7 @@ private:
 	std::vector<Collider*> m_colliders;
 
 public:
-	bool CollisionCheck(Collider* col1, Collider*col2);
+	bool IsCollision(Collider* col1, Collider*col2);
 	void Update();
 	void Clear();
 	void DestroyCollider(Collider* col);

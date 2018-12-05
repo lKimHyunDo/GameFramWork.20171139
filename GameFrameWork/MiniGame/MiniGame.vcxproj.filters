@@ -76,6 +76,15 @@
     <Filter Include="Collision\CollisionManager">
       <UniqueIdentifier>{6af9a78b-b3b3-49b7-8685-0b5547a99812}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ball">
+      <UniqueIdentifier>{78fbba10-bee1-4879-be46-3cd28bfa9e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WhiteBall">
+      <UniqueIdentifier>{0b919a6d-818c-4538-bfab-7ef11c549c93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PocketBallTable">
+      <UniqueIdentifier>{b826e10c-97b1-4b62-b616-09398ef213ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedGraphic.h">
@@ -135,6 +144,12 @@
     <ClInclude Include="Collider.h">
       <Filter>Collision\Collider</Filter>
     </ClInclude>
+    <ClInclude Include="Ball.h">
+      <Filter>Ball</Filter>
+    </ClInclude>
+    <ClInclude Include="WhiteBall.h">
+      <Filter>WhiteBall</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedGraphic.cpp">
@@ -145,9 +160,6 @@
     </ClCompile>
     <ClCompile Include="Game.cpp">
       <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="GameObject.cpp">
-      <Filter>GameObject</Filter>
     </ClCompile>
     <ClCompile Include="GameOverState.cpp">
       <Filter>State\GameOverState</Filter>
@@ -190,6 +202,12 @@
     </ClCompile>
     <ClCompile Include="Collider.cpp">
       <Filter>Collision\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball.cpp">
+      <Filter>Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="WhiteBall.cpp">
+      <Filter>WhiteBall</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

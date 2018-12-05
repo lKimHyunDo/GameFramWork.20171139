@@ -1,3 +1,4 @@
+#include "..\MiniGame\Ball.h"
 #include "Ball.h"
 #include "InputHandler.h"
 #include "Game.h"

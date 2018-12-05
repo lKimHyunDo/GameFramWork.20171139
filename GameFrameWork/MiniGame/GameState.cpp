@@ -1,5 +1,6 @@
 #include "GameState.h"
 #include "GameObject.h"
+#include "CollisionManager.h"
 
 void GameState::update()
 {
@@ -7,6 +8,7 @@ void GameState::update()
 	{
 		m_gameObjects[i]->update();
 	}
+	CollisionManager::Instance()->Update();
 }
 
 void GameState::render()

@@ -1,15 +1,16 @@
 #include "Collider.h"
 #include "CollisionManager.h"
+#include "SDLGameObject.h"
 
 using namespace std;
 
-Collider::Collider(GameObject3D * pGameObject) :
-	m_pGameObject(pGameObject)
+Collider::Collider(SDLGameObject * pGameObject,float radius)
+	: m_pGameObject(pGameObject),m_radius(radius)
 {
-	ColliderManager::Instance()->m_colliders.push_back(this);
+	CollisionManager::Instance()->m_colliders.push_back(this);
 }
 
 Collider::~Collider()
 {
-	ColliderManager::Instance()->DestroyCollider(this);
+	CollisionManager::Instance()->DestroyCollider(this);
 }

@@ -9,15 +9,22 @@ public:
 	virtual void draw();
 	virtual void update();
 	virtual void clean();
+	virtual void collision(SDLGameObject* other);
 
 	Vector2D getPosition() {
 		return m_position;
+	}
+	void addPosition(Vector2D vec) {
+		m_position += vec;
 	}
 	int getWidth() {
 		return m_width;
 	}
 	int getHeight() {
 		return m_height;
+	}
+	Vector2D& RefVelocity() {
+		return m_velocity;
 	}
 protected:
 	Vector2D m_position;

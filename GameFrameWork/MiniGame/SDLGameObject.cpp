@@ -10,6 +10,7 @@ SDLGameObject::SDLGameObject(const LoaderParams* pParams) :
 	m_width = pParams->getWidth();
 	m_height = pParams->getHeight();
 	m_textureID = pParams->getTextureID();
+	m_tag = m_textureID;
 	m_currentRow = 1;
 	m_currentFrame = 1;
 }
@@ -39,5 +40,9 @@ void SDLGameObject::update()
 }
 
 void SDLGameObject::clean()
+{
+}
+
+void SDLGameObject::collision(SDLGameObject * other)
 {
 }
