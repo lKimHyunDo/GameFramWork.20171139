@@ -8,6 +8,7 @@
 #include "GameOverState.h"
 #include "Ball.h"
 #include "WhiteBall.h"
+#include "PocketBallTable.h"
 #include "Game.h"
 
 PlayState* PlayState::s_pInstance = 0;
@@ -30,6 +31,9 @@ void PlayState::render()
 
 bool PlayState::onEnter()
 {
+	if (!TextureManager::Instance()->load("assets/table.png", "table",
+		TheGame::Instance()->getRenderer()))
+		return false;
 	if (!TheTextureManager::Instance()->load("assets/white_ball.png", 
 		"white_ball", TheGame::Instance()->getRenderer())) {
 		return false;
@@ -38,18 +42,19 @@ bool PlayState::onEnter()
 		"red_ball", TheGame::Instance()->getRenderer())) {
 		return false;
 	}
-
+	GameObject* table = new PocketBallTable(new LoaderParams(200, 100, 400, 600, "table"));
 	GameObject* ball = new WhiteBall(new LoaderParams(100, 100, 32, 32, "white_ball"));
 	GameObject* ball2 = new Ball(new LoaderParams(200, 200, 32, 32, "red_ball"));
 	GameObject* ball3 = new Ball(new LoaderParams(200, 100, 32, 32, "red_ball"));
 	GameObject* ball4 = new Ball(new LoaderParams(100, 300, 32, 32, "red_ball"));
 	GameObject* ball5 = new Ball(new LoaderParams(400, 200, 32, 32, "red_ball"));
 
-	m_gameObjects.push_back(ball);
+	m_gameObjects.push_back(table);
 	m_gameObjects.push_back(ball2);
 	m_gameObjects.push_back(ball3);
 	m_gameObjects.push_back(ball4);
 	m_gameObjects.push_back(ball5);
+	m_gameObjects.push_back(ball);
 	std::cout << "entering PlayState\n";
 	return true;
 }

@@ -13,7 +13,7 @@ bool CollisionManager::IsCollision(Collider * col1, Collider * col2)
 
 	float dist = dir.length();
 
-	if (dist <= col1->m_radius + col2->m_radius)
+	if (dist < col1->m_radius + col2->m_radius)
 		return true;
 	
 	return false;

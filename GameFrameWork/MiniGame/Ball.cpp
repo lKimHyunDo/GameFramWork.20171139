@@ -12,8 +12,10 @@ Ball::Ball(const LoaderParams* pParams) :
 
 void Ball::update()
 {
+	m_velocity += m_dVelocity;
 	SDLGameObject::update();
 	friction();
+	m_dVelocity = { 0.f,0.f };
 
 	if (m_position.getX() < 30.f)
 	{
@@ -53,19 +55,35 @@ void Ball::collision(SDLGameObject* other)
 		Vector2D dir = other->getPosition() - m_position;
 		float dist = dir.length();
 		dir.normalize();
-		dist = ((Ball*)other)->getRadius() + m_radius - dist;
-		other->addPosition(dir*dist);
+		if (dist <= ((Ball*)other)->getRadius() + m_radius)
+		{
+			dist = ((Ball*)other)->getRadius() + m_radius - dist;
+			other->addPosition(dir*dist);			
+		}
 
-		//藕己 面倒 内靛
+		//面倒 内靛
 		Vector2D normal_velocity = m_velocity;
 		normal_velocity.normalize();
 		Vector2D vertical;
 		vertical = { dir.getY(),-dir.getX() };
-		float theta = normal_velocity.getX()*dir.getX() + normal_velocity.getY()*dir.getY();
+
+		//float theta = normal_velocity.getX()*dir.getX() + normal_velocity.getY()*dir.getY();
+		float theta = normal_velocity.getX()*vertical.getX() + normal_velocity.getY()*vertical.getY();
+		if (theta < 0)
+		{
+			vertical = { -dir.getY(), dir.getX() };
+			theta = normal_velocity.getX()*vertical.getX() + normal_velocity.getY()*vertical.getY();
+		}
 		theta = acosf(theta);
 		Vector2D vec = { m_velocity.getX()*cosf(theta), m_velocity.getY()*sinf(theta) };
-		other->RefVelocity() += vec;
-		m_velocity -= vec;
+		m_dVelocity += (vec - m_velocity);
+
+		theta = M_PI / 2.f - theta;
+		vec = { m_velocity.getX()*cosf(theta), m_velocity.getY()*sinf(theta) };
+		//other->RefVelocity() += vec;
+		//m_velocity -= vec;
+		dynamic_cast<Ball*>(other)->addDVelocity(vec);
+
 	}
 }
 

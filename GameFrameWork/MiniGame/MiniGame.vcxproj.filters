@@ -150,6 +150,9 @@
     <ClInclude Include="WhiteBall.h">
       <Filter>WhiteBall</Filter>
     </ClInclude>
+    <ClInclude Include="PocketBallTable.h">
+      <Filter>PocketBallTable</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedGraphic.cpp">
@@ -208,6 +211,9 @@
     </ClCompile>
     <ClCompile Include="WhiteBall.cpp">
       <Filter>WhiteBall</Filter>
+    </ClCompile>
+    <ClCompile Include="PocketBallTable.cpp">
+      <Filter>PocketBallTable</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
