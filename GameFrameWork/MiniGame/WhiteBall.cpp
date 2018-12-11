@@ -29,11 +29,21 @@ void WhiteBall::update()
 	if (TheInputHandler::Instance()->getMouseButtonState(0) == false)
 		m_isDrag = false;
 	Ball::update();
+
+	if (TheInputHandler::Instance()->getMouseButtonState(0) == true)
+	{
+		cout << "x: " << TheInputHandler::Instance()->getMousePosition()->getX() <<
+			" y: " << TheInputHandler::Instance()->getMousePosition()->getY() << endl;
+	}
 }
 
 void WhiteBall::collision(SDLGameObject * other)
 {
 	Ball::collision(other);
+	if (other->GetTag() == "hole")
+	{
+		disable();
+	}
 }
 
 void WhiteBall::clean()
@@ -58,5 +68,5 @@ bool WhiteBall::isClicked()
 void WhiteBall::addForce()
 {
 	Vector2D dir = m_position - *InputHandler::Instance()->getMousePosition();
-	m_velocity += dir / 5.f;
+	m_velocity += dir / 7.f;
 }

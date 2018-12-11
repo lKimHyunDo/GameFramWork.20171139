@@ -85,6 +85,15 @@
     <Filter Include="PocketBallTable">
       <UniqueIdentifier>{b826e10c-97b1-4b62-b616-09398ef213ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UnlineBall">
+      <UniqueIdentifier>{f4f54363-545e-45c2-b000-d21984c4d060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LineBall">
+      <UniqueIdentifier>{652379f3-3db0-4341-840e-275f35f638cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hole">
+      <UniqueIdentifier>{258d421a-cf8d-455b-81bb-b12364d2ac5d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedGraphic.h">
@@ -150,8 +159,17 @@
     <ClInclude Include="WhiteBall.h">
       <Filter>WhiteBall</Filter>
     </ClInclude>
-    <ClInclude Include="PocketBallTable.h">
+    <ClInclude Include="Table.h">
       <Filter>PocketBallTable</Filter>
+    </ClInclude>
+    <ClInclude Include="UnlineBall.h">
+      <Filter>UnlineBall</Filter>
+    </ClInclude>
+    <ClInclude Include="LineBall.h">
+      <Filter>LineBall</Filter>
+    </ClInclude>
+    <ClInclude Include="Hole.h">
+      <Filter>Hole</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -212,8 +230,17 @@
     <ClCompile Include="WhiteBall.cpp">
       <Filter>WhiteBall</Filter>
     </ClCompile>
-    <ClCompile Include="PocketBallTable.cpp">
+    <ClCompile Include="Table.cpp">
       <Filter>PocketBallTable</Filter>
+    </ClCompile>
+    <ClCompile Include="UnlineBall.cpp">
+      <Filter>UnlineBall</Filter>
+    </ClCompile>
+    <ClCompile Include="LineBall.cpp">
+      <Filter>LineBall</Filter>
+    </ClCompile>
+    <ClCompile Include="Hole.cpp">
+      <Filter>Hole</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

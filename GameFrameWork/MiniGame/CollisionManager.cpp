@@ -21,24 +21,19 @@ bool CollisionManager::IsCollision(Collider * col1, Collider * col2)
 
 void CollisionManager::Update()
 {
-	//list<Collider*>::iterator iter1 = m_colliders.begin();
-	//list<Collider*>::iterator iter2;
-	//list<Collider*>::iterator iterEnd = m_colliders.end();
-
 	for (int i = 0; i < ((int)m_colliders.size() - 1); i++)
 	{
-		//iter2 = iter1;
-		//iter2++;
 		for (int j = i + 1; j < (int)m_colliders.size(); j++)
 		{
-			if (IsCollision(m_colliders[i], m_colliders[j]))
+			if (m_colliders[i]->m_enable && m_colliders[j]->m_enable)
 			{
-				m_colliders[i]->m_pGameObject->collision(m_colliders[j]->m_pGameObject);
-				m_colliders[j]->m_pGameObject->collision(m_colliders[i]->m_pGameObject);
+				if (IsCollision(m_colliders[i], m_colliders[j]))
+				{
+					m_colliders[i]->m_pGameObject->collision(m_colliders[j]->m_pGameObject);
+					m_colliders[j]->m_pGameObject->collision(m_colliders[i]->m_pGameObject);
+				}
 			}
-			//iter2++;
 		}
-		//iter1++;
 	}
 }
 

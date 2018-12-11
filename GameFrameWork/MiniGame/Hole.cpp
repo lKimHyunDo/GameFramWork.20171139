@@ -1,13 +1,14 @@
-#include "PocketBallTable.h"
+#include "Hole.h"
 #include "TextureManager.h"
 #include "Game.h"
 
-PocketBallTable::PocketBallTable(LoaderParams * pLoaderParams) :
-	SDLGameObject(pLoaderParams)
+Hole::Hole(LoaderParams * pLoaderParams):
+	SDLGameObject(pLoaderParams),m_collider(this,m_width/2.f)
 {
+	m_tag = "hole";
 }
 
-void PocketBallTable::draw()
+void Hole::draw()
 {
 	TextureManager::Instance()->draw(m_textureID,
 		m_position.getX() - m_width / 2.f,

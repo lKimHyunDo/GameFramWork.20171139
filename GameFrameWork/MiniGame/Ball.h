@@ -8,6 +8,7 @@ class Ball : public SDLGameObject
 private:
 	Collider m_collider;
 	float m_radius;
+	bool m_enable;
 
 	Vector2D m_dVelocity = { 0.f,0.f };
 
@@ -19,9 +20,14 @@ public:
 	virtual void clean();
 
 	void friction();
+	virtual void disable();
+
+	bool getEnable() {
+		return m_enable;
+	}
 	float getRadius() { return m_radius; }
 
-	void addDVelocity(Vector2D vec){
+	void addDVelocity(Vector2D vec) {
 		m_dVelocity += vec;
 	}
 };

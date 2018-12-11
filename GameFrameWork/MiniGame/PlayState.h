@@ -3,6 +3,7 @@
 #include "GameState.h"
 
 class SDLGameObject;
+class WhiteBall;
 
 class PlayState : public GameState
 {
@@ -20,7 +21,11 @@ public:
 	}
 
 private:
+	PlayState() {}
+
 	static const std::string s_playID;
 	static PlayState* s_pInstance;
-	PlayState() {}
+
+	WhiteBall* m_pWhiteBall;
+
 };

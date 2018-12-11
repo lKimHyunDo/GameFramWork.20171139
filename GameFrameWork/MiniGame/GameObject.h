@@ -11,9 +11,9 @@ public:
 	virtual void update() = 0;
 	virtual void clean() = 0;
 	std::string GetTag() { return m_tag; }
+	virtual ~GameObject() {}
 protected:
 	GameObject(const LoaderParams* pParams) {}
-	virtual ~GameObject() {}
 	
 	std::string m_tag;
 };

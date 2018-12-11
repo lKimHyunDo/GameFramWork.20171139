@@ -82,6 +82,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -142,7 +143,10 @@
     <ClInclude Include="Collider.h" />
     <ClInclude Include="Ball.h" />
     <ClInclude Include="WhiteBall.h" />
-    <ClInclude Include="PocketBallTable.h" />
+    <ClInclude Include="Table.h" />
+    <ClInclude Include="UnlineBall.h" />
+    <ClInclude Include="LineBall.h" />
+    <ClInclude Include="Hole.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedGraphic.cpp" />
@@ -164,7 +168,10 @@
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="WhiteBall.cpp" />
-    <ClCompile Include="PocketBallTable.cpp" />
+    <ClCompile Include="Table.cpp" />
+    <ClCompile Include="UnlineBall.cpp" />
+    <ClCompile Include="LineBall.cpp" />
+    <ClCompile Include="Hole.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
