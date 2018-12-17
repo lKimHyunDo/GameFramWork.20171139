@@ -31,9 +31,6 @@
     <Filter Include="MenuButton">
       <UniqueIdentifier>{8afe5e0f-9e28-4c94-9bb4-ca25039a5e18}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Player">
-      <UniqueIdentifier>{3cf16bcf-36be-42ea-a6d6-4f62eed70366}</UniqueIdentifier>
-    </Filter>
     <Filter Include="SDLGameObject">
       <UniqueIdentifier>{78089495-5d61-478d-880c-01d5a73ef3eb}</UniqueIdentifier>
     </Filter>
@@ -63,9 +60,6 @@
     </Filter>
     <Filter Include="State\PlayState">
       <UniqueIdentifier>{ea92639e-30ec-4f75-b2db-bcec7225cdc5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Enemy">
-      <UniqueIdentifier>{912e2f98-0fdc-4bf1-ac44-e8c6c3c8b157}</UniqueIdentifier>
     </Filter>
     <Filter Include="Collision">
       <UniqueIdentifier>{93931c74-ab07-464d-ba33-e252834339fd}</UniqueIdentifier>
@@ -99,9 +93,6 @@
     <ClInclude Include="AnimatedGraphic.h">
       <Filter>AnimatedGraphic</Filter>
     </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Enemy</Filter>
-    </ClInclude>
     <ClInclude Include="Game.h">
       <Filter>Game</Filter>
     </ClInclude>
@@ -131,9 +122,6 @@
     </ClInclude>
     <ClInclude Include="PauseState.h">
       <Filter>State\PauseState</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Player</Filter>
     </ClInclude>
     <ClInclude Include="PlayState.h">
       <Filter>State\PlayState</Filter>
@@ -176,9 +164,6 @@
     <ClCompile Include="AnimatedGraphic.cpp">
       <Filter>AnimatedGraphic</Filter>
     </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>Enemy</Filter>
-    </ClCompile>
     <ClCompile Include="Game.cpp">
       <Filter>Game</Filter>
     </ClCompile>
@@ -205,9 +190,6 @@
     </ClCompile>
     <ClCompile Include="PauseState.cpp">
       <Filter>State\PauseState</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Player</Filter>
     </ClCompile>
     <ClCompile Include="PlayState.cpp">
       <Filter>State\PlayState</Filter>

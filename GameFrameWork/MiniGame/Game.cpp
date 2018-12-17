@@ -25,12 +25,7 @@ bool Game::init(const char * title, int xpos, int ypos, int width, int height, b
 		return false;
 	}
 
-	
-
-	TheTextureManager::Instance()->load("assets/animate-alpha.png", "animate", m_pRenderer);
-
-	m_gameObjects.push_back(new Player(new LoaderParams(100, 100, 128, 82, "animate")));
-	m_gameObjects.push_back(new Enemy(new LoaderParams(300, 300, 128, 82, "animate")));
+	SDL_SetRenderDrawColor(m_pRenderer, 0, 0, 0, 255);
 
 	m_pGameStateMachine = new GameStateMachine();
 	m_pGameStateMachine->changeState(MenuState::Instance());
@@ -42,7 +37,6 @@ bool Game::init(const char * title, int xpos, int ypos, int width, int height, b
 
 void Game::render()
 {
-	SDL_SetRenderDrawColor(m_pRenderer, 0, 200, 255, 255);
 	SDL_RenderClear(m_pRenderer);
 	m_pGameStateMachine->render();
 	SDL_RenderPresent(m_pRenderer);

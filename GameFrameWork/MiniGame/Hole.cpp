@@ -10,8 +10,9 @@ Hole::Hole(LoaderParams * pLoaderParams):
 
 void Hole::draw()
 {
-	TextureManager::Instance()->draw(m_textureID,
-		m_position.getX() - m_width / 2.f,
-		m_position.getY() - m_height / 2.f,
-		m_width, m_height, TheGame::Instance()->getRenderer());
+	//
+	//TextureManager::Instance()->draw(m_textureID,
+	//	m_position.getX() - m_width / 2.f,
+	//	m_position.getY() - m_height / 2.f,
+	//	m_width, m_height, TheGame::Instance()->getRenderer());
 }

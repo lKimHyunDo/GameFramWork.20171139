@@ -22,9 +22,6 @@ private:
 
 	GameStateMachine* m_pGameStateMachine;
 
-	std::vector<GameObject*> m_gameObjects;
-
-
 private:
 	Game() {}
 	// create the s_pInstance member variable
